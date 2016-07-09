@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>abc</title>
+    <script src="http://cdn.bootcss.com/react/15.2.0/react.js"></script>
+    <script src="http://cdn.bootcss.com/react/15.2.0/react-dom.js"></script>
+</head>
+<body>
+<div id="c"></div>
+<script src="xzt.js"></script>
+<script>
+
+    var data = [
+        {title:'你的性取向?',type:'radio',name:'a',answer:1,children:[{value:1,label:'女人'},{value:2,label:'男人'},{value:3,label:'妖'}]},
+        {title:'abc',type:'radio',name:'b',answer:3,children:[{value:1,label:'选项1'},{value:2,label:'选项2'},{value:3,label:'选项3'}]},
+        {title:'abc',type:'radio',name:'c',answer:3,children:[{value:1,label:'选项1'},{value:2,label:'选项2'},{value:3,label:'选项3'}]},
+        {title:'abc',type:'radio',name:'d',answer:3,children:[{value:1,label:'选项1'},{value:2,label:'选项2'},{value:3,label:'选项3'}]}
+    ];
+    ReactDOM.render(React.createElement(T, {data: data}),document.getElementById('c'));
+</script>
+</body>
+</html>
