@@ -47,13 +47,13 @@ var Tc = React.createClass({
             var type = This.props.data.type;
             var name = This.props.data.name;
             children.push(
-                <dd key={k} ><label><input type={type} name={name} value={item.value} />{item.label}</label></dd>
+                <dd className="xz_dd" key={k} ><label><input type={type} name={name} value={item.value} />{item.label}</label></dd>
             );
         });
         return (
 
-            <dl data-status="0" data-v={This.props.data.answer} onClickCapture={This.clickHandle} >
-                <dt>{title}</dt>
+            <dl className="xz_dl" data-status="0" data-v={This.props.data.answer} onClickCapture={This.clickHandle} >
+                <dt className="xz_dt">{title}</dt>
                 {children}
             </dl>
         )
@@ -108,7 +108,7 @@ var T=React.createClass({
         });
         return (
             <div>
-                <span>对({this.state.right})</span><span>错({this.state.wrong})</span>
+                <span className="xz_span xz_right">对({this.state.right})</span><span className="xz_span xz_wrong" >错({this.state.wrong})</span>
                 {rows}
             </div>
         )
