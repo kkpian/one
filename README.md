@@ -1,9 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
     <style type="text/css">
     *{
     margin:0 auto;
@@ -122,5 +117,3 @@
                 </dd></dl>
     </div>
 </div>
-</body>
-</html>
