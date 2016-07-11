@@ -47,13 +47,13 @@ var Tc = React.createClass({displayName: "Tc",
             var type = This.props.data.type;
             var name = This.props.data.name;
             children.push(
-                React.createElement("dd", {key: k}, React.createElement("label", null, React.createElement("input", {type: type, name: name, value: item.value}), item.label))
+                React.createElement("dd", {className: "xz_dd", key: k}, React.createElement("label", null, React.createElement("input", {type: type, name: name, value: item.value}), item.label))
             );
         });
         return (
 
-            React.createElement("dl", {"data-status": "0", "data-v": This.props.data.answer, onClickCapture: This.clickHandle}, 
-                React.createElement("dt", null, title), 
+            React.createElement("dl", {className: "xz_dl", "data-status": "0", "data-v": This.props.data.answer, onClickCapture: This.clickHandle}, 
+                React.createElement("dt", {className: "xz_dt"}, title), 
                 children
             )
         )
@@ -108,7 +108,7 @@ var T=React.createClass({displayName: "T",
         });
         return (
             React.createElement("div", null, 
-                React.createElement("span", null, "对(", this.state.right, ")"), React.createElement("span", null, "错(", this.state.wrong, ")"), 
+                React.createElement("span", {className: "xz_span xz_right"}, "对(", this.state.right, ")"), React.createElement("span", {className: "xz_span xz_wrong"}, "错(", this.state.wrong, ")"), 
                 rows
             )
         )
